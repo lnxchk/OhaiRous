@@ -27,6 +27,7 @@ We're using `/etc/ohai/plugins` as our custom plugins dir for Ohai.  There's mor
 ## What does it give you?
 
 Right now, you get this:
+
 ```
 {
   "rous": {
