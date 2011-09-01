@@ -11,9 +11,9 @@ Add your query to the line:
 stuff = `rpm -qa YOURQUERYHERE --queryformat "%{NAME},%{RELEASE}-%{VERSION},%{INSTALLTIME}\n"
 
 for example:
-``` ruby
+```
 stuff = `rpm -qa redhat* --queryformat "%{NAME},%{RELEASE}-%{VERSION},%{INSTALLTIME}\n"`
-````
+```
 
 Your query can be anything that will legitimately run against your rpm database. 
 
@@ -27,7 +27,7 @@ We're using `/etc/ohai/plugins` as our custom plugins dir for Ohai.  There's mor
 ## What does it give you?
 
 Right now, you get this:
-``` json
+```
 {
   "rous": {
     "packages": {
@@ -145,3 +145,7 @@ rous.packages.redhat-logos:
 ```
 
 You can take it all the way down to the bottom leaves in the json, like `rous.packages.redhat-logos.version` for example.
+
+## Future work
+
+Look out for some companion knife plugin :D
