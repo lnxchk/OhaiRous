@@ -147,6 +147,17 @@ rous.packages.redhat-logos:
 
 You can take it all the way down to the bottom leaves in the json, like `rous.packages.redhat-logos.version` for example.
 
+You can search on any of the data that shows up in the node, too, like the install date.  
+
+```
+$ knife search node "installdate:2011-02-04" -a rous.packages.redhat-release.version
+1 items found
+
+id:                                   myhost.example.com
+rous.packages.redhat-release.version: 5.6.0.3-5Server
+```
+
+
 ## Future work
 
 Look out for some companion knife plugin :D
