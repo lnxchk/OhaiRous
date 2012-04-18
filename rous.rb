@@ -37,6 +37,6 @@ stuff.split("\n").each do |line|
 end
 
 
-myrpms = Mash.new
+myrpms = Mash.new(mystuff)
 rous[:packages] = myrpms
 
